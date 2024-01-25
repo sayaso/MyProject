@@ -20,6 +20,8 @@ const { PORT = 3001 } = process.env;
 
 const app = express();
 
+const { getAllCards } = require('./controllers/cards');
+
 app.use(cors({
   origin: ['https://mokwar.nomoreparties.co', 'http://localhost:3000', 'http://mokwar.nomoreparties.co'],
 }));
@@ -29,7 +31,7 @@ const {
   createUser,
 } = require('./controllers/users');
 
-mongoose.connect('mongodb://0.0.0.0:27017/afilavoavoa', {
+mongoose.connect('mongodb://0.0.0.0:27017/mestodb', {
   useNewUrlParser: true,
 })
   .then(() => {
@@ -47,6 +49,7 @@ app.get('/crash-test', () => {
 app.use(express.json());
 app.use(cookieParser());
 app.use(requestLogger);
+app.get('/cards-get', getAllCards);
 app.post('/signin', celebrate({
   body: Joi.object().keys({
     email: Joi.string().required().email(),

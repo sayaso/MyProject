@@ -14,6 +14,7 @@ router.get('/', getAllCards);
 router.post('/', celebrate({
   body: Joi.object().keys({
     name: Joi.string().required().min(2).max(30),
+    description: Joi.string().min(0).max(2000),
     link: Joi.string().pattern(/^(http|ftp|https)?(\:\/\/)?[\w-]+(\.[\w-]+)+([\w.,@?^!=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])+$/).required(), // eslint-disable-line no-useless-escape
   }),
 }), createCard);
@@ -34,3 +35,4 @@ router.delete('/:cardId/likes', celebrate({
 }), deleteLike);
 
 module.exports = router;
+
