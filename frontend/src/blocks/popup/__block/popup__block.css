@@ -1,0 +1,15 @@
+.popup__block {
+    width: 430px;
+    background-color: #fff;
+    color: #000;
+    align-self: end;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 630px){
+    .popup__block {
+    width: 282px;
+    margin-left: 0;
+    }
+}

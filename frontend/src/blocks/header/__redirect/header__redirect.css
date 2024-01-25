@@ -1,0 +1,20 @@
+.header__redirect {
+    text-decoration: none;
+    color: #101010;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    transition: opacity 0.3s ease;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.header__redirect:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__redirect {
+        margin-right: 9vw;
+    }
+}

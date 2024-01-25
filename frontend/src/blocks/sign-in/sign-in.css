@@ -1,0 +1,13 @@
+.sign-in {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto 0;
+}
+
+@media screen and (max-width: 630px){
+    .sign-in {
+        margin-top: 40px;
+        width: 260px;
+    }
+}

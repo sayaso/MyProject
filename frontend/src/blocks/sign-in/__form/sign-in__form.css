@@ -1,0 +1,12 @@
+.sign-in__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 630px){
+    .sign-in__form {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,12 @@
+.element__like-count {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    width: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 22px 0 0 4px;
+}

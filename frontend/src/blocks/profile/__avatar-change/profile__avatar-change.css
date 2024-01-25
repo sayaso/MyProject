@@ -1,0 +1,15 @@
+.profile__avatar-change {
+    background-image: url('../../../images/edit-avatar.svg');
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.profile__avatar-change:hover {
+    background-color: hsla(0, 0%, 100%, 0.8);
+    opacity: 1;
+}

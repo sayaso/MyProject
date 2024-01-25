@@ -1,0 +1,10 @@
+.element__heart {
+    width: 22px;
+    height: 19px;
+    cursor: pointer;
+    margin: -6px 20px 0 auto;
+    background-image: url(../../../images/like.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
+}
