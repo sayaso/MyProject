@@ -22,17 +22,17 @@ const userSchema = new mongoose.Schema({
     type: String,
     minlength: 2,
     maxlength: 30,
-    default: 'Жак-Ив Кусто',
+    default: 'Алиса',
   },
   about: {
     type: String,
     minlength: 2,
     maxlength: 30,
-    default: 'Исследователь',
+    default: 'Star',
   },
   avatar: {
     type: String,
-    default: 'https://pictures.s3.yandex.net/resources/jacques-cousteau_1604399756.png',
+    default: 'https://avatars.dzeninfra.ru/get-zen_doc/96780/pub_5b1c054d2f578ce65e7810ad_5b1c06d93dceb762487a2e7c/scale_1200',
     validate: {
       validator: (data) => {
         const regex = /^(http|ftp|https)?(\:\/\/)?[\w-]+(\.[\w-]+)+([\w.,@?^!=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])+$/gmi; // eslint-disable-line no-useless-escape
